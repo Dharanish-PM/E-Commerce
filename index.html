@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home | Comfy</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <!--links-->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a class="nav-link" href="home.html">Home</a></li>
+            <li><a class="nav-link" href="products.html">Products</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+        <!--logo-->
+        <img src="./images/logo-white.svg" class="nav-logo" alt="logo" />
+        <!--cart-->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">rest,relax,unwind</h1>
+        <h3>Embrace your choices - we do</h3>
+        <a href="products.html" class="hero-btn">shop now</a>
+      </div>
+    </section>
+    <!--sidebar-->
+    <div class="sidebar-overlay show">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"> </i>
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"> </i>
+              Products</a
+            >
+          </li>
+
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"> </i>
+              About</a
+            >
+          </li>
+          <!--fa-fw is for aligning icon and text at same line-->
+        </ul>
+      </aside>
+      <!--aside to move contents along one sode of the page-->
+    </div>
+
+    <!--car overlay-->
+    <div class="cart-overlay show">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <!--cart items-->
+        <div class="cart-items">
+          <!--single item-->
+          <article class="cart-item" data-id="">
+            <img
+              src="./images/main-bcg.jpeg"
+              class="cart-item-img"
+              alt="name"
+            />
+            <!--item info-->
+            <div>
+              <h4 class="cart-item-name">high</h4>
+              <p class="cart-item-price">$56.99</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+            <!--amount toggle-->
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="fas fa-chevron-up"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <!--footer-->
+        <footer>
+          <h3 class="cart-total text-slanted">total:$12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
