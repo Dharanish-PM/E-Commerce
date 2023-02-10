@@ -22,7 +22,7 @@ const setupPrice = (store) => {
       const products = getElement(".products-container");
       products.innerHTML = `<h3 class="filter-error">No items matched</h3>`;
     } else {
-      display(newStore, getElement(".products-container"));
+      display(newStore, getElement(".products-container"), true);
     }
   });
 };

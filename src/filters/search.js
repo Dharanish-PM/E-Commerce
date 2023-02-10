@@ -17,10 +17,10 @@ const setupSearch = (store) => {
         const products = getElement(".products-container");
         products.innerHTML = `<h3 class="filter-error">No items matched</h3>`;
       } else {
-        display(newStore, getElement(".products-container"));
+        display(newStore, getElement(".products-container"), true);
       }
     } else {
-      display(store, getElement(".products-container"));
+      display(store, getElement(".products-container"), true);
     }
   });
 };
