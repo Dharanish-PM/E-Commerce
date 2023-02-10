@@ -1,7 +1,6 @@
 import { formatPrice } from "./utils.js";
 import { addToCart } from "./cart/setupCart.js";
 const display = (products, element) => {
-  console.log(products, element);
   element.innerHTML = products
     .map((pro) => {
       const { id, name, image, price } = pro;
@@ -25,6 +24,12 @@ const display = (products, element) => {
         </article>`;
     })
     .join("");
+  element.addEventListener("click", function (e) {
+    const parent = e.target.parentElement; //e.target goves the icon not the button which has the id
+    if (parent.classList.contains("product-cart-btn")) {
+      addToCart(parent.dataset.id);
+    }
+  });
 };
 
 export default display;
