@@ -88,29 +88,6 @@
         <!--cart items-->
         <div class="cart-items">
           <!--single item-->
-          <article class="cart-item" data-id="">
-            <img
-              src="./images/main-bcg.jpeg"
-              class="cart-item-img"
-              alt="name"
-            />
-            <!--item info-->
-            <div>
-              <h4 class="cart-item-name">high</h4>
-              <p class="cart-item-price">$56.99</p>
-              <button class="cart-item-remove-btn">remove</button>
-            </div>
-            <!--amount toggle-->
-            <div>
-              <button class="cart-item-increase-btn">
-                <i class="fas fa-chevron-up"></i>
-              </button>
-              <p class="cart-item-amount">1</p>
-              <button class="cart-item-decrease-btn">
-                <i class="fas fa-chevron-down"></i>
-              </button>
-            </div>
-          </article>
         </div>
         <!--footer-->
         <footer>
@@ -146,12 +123,16 @@
               max="100"
             />
           </form>
+          <p class="price-value"></p>
         </div>
       </div>
       <!--products-->
       <div class="products-container"></div>
     </section>
     <!--page loadgin-->
+    <div class="page-loading">
+      <h2>loading</h2>
+    </div>
 
     <script type="module" src="./src/pages/products.js"></script>
   </body>

@@ -14,7 +14,116 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2>single product</h2>
+    <nav class="navbar page">
+      <div class="nav-center">
+        <!--links-->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="products.html">Products</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+        <!--logo-->
+        <img src="./images/logo-black.svg" class="nav-logo" alt="logo" />
+        <!--cart-->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">HOME / Single Product</h3>
+      </div>
+    </section>
+    <!--sidebar-->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"> </i>
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"> </i>
+              Products</a
+            >
+          </li>
+
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"> </i>
+              About</a
+            >
+          </li>
+          <!--fa-fw is for aligning icon and text at same line-->
+        </ul>
+      </aside>
+      <!--aside to move contents along one sode of the page-->
+    </div>
+
+    <!--car overlay-->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <!--cart items-->
+        <div class="cart-items">
+          <!--single item-->
+        </div>
+        <!--footer-->
+        <footer>
+          <h3 class="cart-total text-slanted">total:$12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <!--product info-->
+    <section class="single-product">
+      <div class="section-center single-product-center">
+        <img
+          src="./images/logo-white.svg"
+          class="single-product-img img"
+          alt="image"
+        />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title">couch</h2>
+            <p class="single-product-company text-slanted">by nas</p>
+            <p class="single-product-price">34</p>
+
+            <div class="single-product-colors"></div>
+            <p class="single-product-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+              rerum.
+            </p>
+            <button class="addToCartBtn btn" data-id="id">add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="page-loading">
+      <h2>loading</h2>
+    </div>
     <script type="module" src="./src/pages/product.js"></script>
   </body>
 </html>

@@ -13,5 +13,8 @@ const setupStore = (products) => {
   setStorageItem("store", store);
 };
 // console.log(store); empty array only, access using export
-const findProduct = () => {};
+const findProduct = (id) => {
+  let pro = store.find((p) => p.id === id);
+  return pro;
+};
 export { store, setupStore, findProduct };
